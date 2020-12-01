@@ -1,4 +1,4 @@
-from Common.common import getNumbers
+from common.common import getNumbers
 
 
 def solve() -> int:
