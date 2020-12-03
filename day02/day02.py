@@ -1,4 +1,4 @@
-from common.common import getLines
+from common.common import get_lines
 
 
 def parse_line(line: str) -> (int, int, str, str):
@@ -9,7 +9,7 @@ def parse_line(line: str) -> (int, int, str, str):
 
 
 def solve() -> int:
-    lines = getLines('in.txt')
+    lines = get_lines('in.txt')
     return len(list(filter(is_valid_pass, lines)))
 
 
@@ -19,7 +19,7 @@ def is_valid_pass(line: str) -> bool:
 
 
 def solve2() -> int:
-    lines = getLines('in.txt')
+    lines = get_lines('in.txt')
     return len(list(filter(is_valid_pass2, lines)))
 
 

@@ -1,8 +1,8 @@
-from common.common import getNumbers
+from common.common import get_numbers
 
 
 def solve() -> int:
-    numbers = getNumbers('in.txt')
+    numbers = get_numbers('in.txt')
     dictionary = {i: 1 for i in numbers}
     for i in numbers:
         for j in numbers:
