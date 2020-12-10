@@ -1,6 +1,6 @@
 from typing import List
 
-from common.common import get_lines
+from common.common import get_numbers
 
 
 def solve(jolts: List[int]) -> int:
@@ -20,7 +20,7 @@ def solve_2(jolts: List[int], i: int, dp) -> int:
 
 
 if __name__ == '__main__':
-    numbers = list(map(int, get_lines('in.txt')))
+    numbers = get_numbers('in.txt')
     numbers.extend([0, max(numbers) + 3])
     numbers.sort()
     print(solve(numbers))
